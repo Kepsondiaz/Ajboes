@@ -1,0 +1,1 @@
+alert ("bienvenue dans la page ajboes-web.");
