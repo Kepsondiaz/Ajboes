@@ -67,6 +67,7 @@ strong
     flex-direction: column;
     flex-wrap: wrap;
     margin:0 450px 0 450px;
+    flex: 1 0 auto;
 }
 H1
 {
@@ -103,9 +104,9 @@ h2
 }
 .page-footer
 {
-    margin-top: 100px;
+    margin-top: 150px;
     background-color:#a6f05d;
-    height: 500px;
+    height: 100%;
 }
 .container-fluid
 {
@@ -120,6 +121,11 @@ h2
 .col1
 {
     padding-right: 100px;
+    color: #7F07B3;
+}
+.col1 h5
+{
+    color: #101010;
 }
 .col1 p a:hover
 {
@@ -134,7 +140,7 @@ h2
 {
     padding-top:5px ;
     list-style-type:none;
-    color: white;
+    color:#7F07B3;
 }
 .list-unstyled a:hover
 {
@@ -149,6 +155,7 @@ h2
 {
     padding-top:5px ;
     color:#7F07B3;
+    list-style-type:none;
 }
 h5
 {
@@ -182,23 +189,24 @@ h5
         padding-right:100px ;
     }
     .page-footer{
-        height: 100%;
+        height: auto;
+        position: absolute;
     }
     .container-fluid{
         flex-wrap: wrap;
         width: 100%;
     }
     .col1{
-        padding-top:15px;
+        padding-top:100px;
         padding-bottom:15px;
         padding-left:45px;
     }
     .col2{
-        padding-top:15px;
+        padding-top:100px;
         padding-bottom:15px;
     }
     .col3{
-        padding-top:15px;
+        padding-top:100px;
         padding-bottom:15px;
     }
 }
