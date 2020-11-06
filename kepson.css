@@ -176,7 +176,7 @@ h5
     font-style: italic;
     padding-top: 5px;
 }
-@media(max-width:600px)
+@media(min-width:768px)
 {
     body{
         display: block;
