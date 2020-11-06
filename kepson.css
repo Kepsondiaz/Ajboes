@@ -64,6 +64,7 @@ strong
 .contener
 {
     display: flex;
+    
     flex-direction: column;
     flex-wrap: wrap;
     margin:0 450px 0 450px;
@@ -179,6 +180,7 @@ h5
 {
     body{
         display: block;
+        width: 100%;
     }
     #navbar{
         flex-wrap: wrap;
@@ -187,10 +189,13 @@ h5
         color:#7F07B3;
         margin-left:50px ;
         padding-right:100px ;
+        width: 69%;
+        height:100%;
     }
     .page-footer{
         height: auto;
         position: absolute;
+        width:100% ;
     }
     .container-fluid{
         flex-wrap: wrap;
@@ -208,5 +213,13 @@ h5
     .col3{
         padding-top:100px;
         padding-bottom:15px;
+    }
+    .copyright
+    {
+        height: 100px;
+    }
+    .copyright p
+    {
+        padding-top: 40px;
     }
 }
