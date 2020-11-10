@@ -8,6 +8,7 @@ body
     background-attachment:fixed;
     font-family: 'Roboto', Arial, sans-serif;
     background-color: rgba(0 0 0 0.2);
+    width: 100%;
 }
 a {text-decoration: none;}    
 #navbar
@@ -45,7 +46,8 @@ a {text-decoration: none;}
 header
 {
     background-image: url(ajboes_3.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     padding-top: 200px;
     padding-left: 100px;
@@ -176,14 +178,23 @@ h5
     font-style: italic;
     padding-top: 5px;
 }
-@media(min-width:768px)
+@media(max-width:500px)
 {
     body{
-        display: block;
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
     #navbar{
         flex-wrap: wrap;
+        background-position: absolute;
+    }
+    #menu
+    {
+        flex-wrap: wrap;
+    }
+    header{
+            max-width: 100%;
+            height: auto;
     }
     .contener{
         color:#7F07B3;
@@ -195,7 +206,6 @@ h5
     .page-footer{
         height: auto;
         position: absolute;
-        width:100% ;
     }
     .container-fluid{
         flex-wrap: wrap;
@@ -222,4 +232,35 @@ h5
     {
         padding-top: 40px;
     }
+}
+@media(max-width:980px)
+{
+    .contener{
+        color:#7F07B3;
+        margin-left:50px ;
+        padding-right:100px ;
+        width: 69%;
+        height:100%;
+    }
+
+.page-footer{
+    height: auto;
+    position: absolute;
+}
+.container-fluid{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col3
+{
+    padding-top: 100px;
+}
+.copyright
+{
+    height: 100px;
+}
+.copyright p
+{
+    padding-top: 40px;
+}
 }
